@@ -35,7 +35,6 @@ pm2.yml
 .yarn
 *.iml
 *.log
-.vscode
 .tool-versions
 .claude
 .agents
@@ -49,8 +48,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env
-.env.*
 *.env.*
 
 *.dev.yml
@@ -69,3 +66,4 @@ yarn-error.log*
 
 # ZCode session-local working files (plans, scratch state) never enter the repo.
 /.zcode/
+config.bat

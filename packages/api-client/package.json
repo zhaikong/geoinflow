@@ -19,7 +19,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },

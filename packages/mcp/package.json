@@ -29,19 +29,19 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "prepack": "pnpm --filter @umami/api-client build && pnpm run build",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "start": "node dist/cli.js"
+    "start": "node init && node dist/cli.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/server": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.3.1",
     "@umami/api-client": "workspace:*",
-    "zod": "^4.4.3"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
-    "@modelcontextprotocol/client": "^2.0.0",
+    "@modelcontextprotocol/client": "^2.3.1",
     "@types/node": "^26.4.0",
     "tsup": "^8.5.0",
     "typescript": "^6.0.3",
